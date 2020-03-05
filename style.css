@@ -82,6 +82,7 @@ h3 {
   width: 39rem;
   text-align: justify;
   font-family: "Montserrat", "Helvetica Nueue", Helvetica, Arial, sans-serif;
+  font-size: 3rem;
 }
 
 .content__title span {
@@ -158,4 +159,50 @@ canvas {
 
 .okbe-logo img {
   max-width: 100%;
+}
+
+@media (max-width: 500px) {
+  body {
+    font-size: 1.3rem;
+  }
+  .logo-container {
+    width: 18rem;
+    height: 18rem;
+    margin-bottom: 3rem;
+  }
+  .content__title {
+    width: 28rem;
+    font-size: 2.4rem;
+    text-align: center;
+  }
+  .content__signup {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .content__signup input {
+    height: 3.6rem;
+    margin: 0;
+    border: 0;
+    padding: 0.6rem;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+  }
+  .content__signup input[type="email"] {
+    flex-grow: 0;
+  }
+  .content__signup input[type="submit"] {
+    font-size: 1.3rem;
+  }
+  .okbe-logo {
+    width: 18rem;
+    bottom: 2rem;
+    left: calc(50% - 9rem);
+  }
+}
+
+@media (max-width: 380px) {
+  .message-us {
+    font-size: 1.6rem;
+  }
 }
