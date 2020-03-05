@@ -1,0 +1,139 @@
+@font-face {
+  font-family: "Montserrat";
+  src: url("...");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("...");
+  font-display: swap;
+}
+
+/*
+#09c;
+#ff0080;
+#081c73;
+*/
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  -webkit-font-smoothing: antialiased;
+}
+
+a,
+a:visited {
+  color: #fff;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background-color: #09c;
+  padding: 0;
+  margin: 0;
+  font-size: 1.5rem;
+  color: #fff;
+  font-family: "Source Sans Pro", "Helvetica Nueue", Helvetica, Arial,
+    sans-serif;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -60%);
+  align-items: center;
+  width: 60rem;
+}
+
+h1,
+h2,
+h3 {
+  text-transform: uppercase;
+  font-weight: 700;
+  margin: 0;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
+}
+
+.content__title {
+  letter-spacing: 0.3rem;
+  line-height: 1.4;
+  margin: 2rem auto 0;
+  width: 39rem;
+  text-align: justify;
+  font-family: "Montserrat", "Helvetica Nueue", Helvetica, Arial, sans-serif;
+}
+
+.content__title span {
+  color: #081c73;
+  text-decoration: underline;
+}
+
+.content__stay-tuned {
+  font-size: 2.4rem;
+  font-weight: 600;
+}
+
+.logo-container {
+  width: 25rem;
+  height: 25rem;
+  background: #fff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 20px 0 #ff0080;
+  margin-bottom: 4rem;
+}
+
+.logo-container img {
+  max-width: 70%;
+  margin-left: 0.5rem;
+}
+
+.content__signup {
+  width: 39rem;
+  display: flex;
+  margin: 2rem auto;
+}
+
+.content__signup input {
+  height: 4.2rem;
+  margin: 0;
+  border: 0;
+  padding: 1rem;
+  text-transform: uppercase;
+}
+
+.content__signup input[type="email"] {
+  flex-grow: 1;
+  outline: 0;
+  box-shadow: none;
+}
+.content__signup input[type="submit"] {
+  background: #081c73;
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 1rem;
+}
