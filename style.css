@@ -76,7 +76,7 @@ h3 {
 }
 
 .content__title {
-  letter-spacing: 0.3rem;
+  letter-spacing: 0.2rem;
   line-height: 1.4;
   margin: 2rem auto 0;
   width: 39rem;
@@ -198,6 +198,12 @@ canvas {
     width: 18rem;
     bottom: 2rem;
     left: calc(50% - 9rem);
+  }
+}
+
+@media (max-height: 560px) {
+  .okbe-logo {
+    display: none;
   }
 }
 
